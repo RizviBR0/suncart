@@ -114,7 +114,7 @@ const Footer = () => {
                             </li>
                             <li>
                                 <Link
-                                    href="/my-profile"
+                                    href="/profile"
                                     className="transition hover:text-orange-500"
                                 >
                                     My Profile

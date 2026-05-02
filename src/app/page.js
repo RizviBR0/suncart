@@ -1,9 +1,22 @@
 import Carousel from "@/components/Carousel";
+import ProductCard from "@/components/ProductCard";
 
-export default function Home() {
+export default async function Home() {
+  const res = await fetch("https://suncart-pink.vercel.app/products.json");
+  const products = await res.json();
+
+  console.log(products);
+
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <Carousel />
+
+      <section>
+        <h1>Popular Products</h1>
+        {products.map((product) => (
+          <ProductCard key={product.id} item={product} />
+        ))}
+      </section>
     </div>
   );
 }
