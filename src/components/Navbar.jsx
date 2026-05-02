@@ -35,11 +35,11 @@ const Navbar = () => {
             <nav className="flex justify-between items-center  py-3 container mx-auto w-full">
                 <div className="flex gap-2 items-center">
                     <Image
-                        src={"/logo.png"}
+                        src={"/logo2.png"}
                         alt="logo"
                         loading="eager"
-                        width={120}
-                        height={30}
+                        width={152}
+                        height={52}
                         className="object-cover h-auto w-auto"
                     />
                 </div>
@@ -84,12 +84,20 @@ const Navbar = () => {
                         </ul>} */}
 
                     <ul className="flex items-center text-sm gap-3">
-                        <li className="font-semibold">
-                            <Link href={"/signup"}>SignUp</Link>
-                        </li>
-                        <li className="font-semibold">
-                            <Link href={"/signin"}>SignIn</Link>
-                        </li>
+                        <Link
+                            href="/login"
+                            variant="bordered"
+                            className="border-gray-300 font-medium text-gray-800"
+                        >
+                            Login
+                        </Link>
+
+                        <Link
+                            href="/register"
+                            className="bg-linear-to-r from-orange-500 to-red-500 font-semibold text-white px-4 py-1.5 rounded-full"
+                        >
+                            Register
+                        </Link>
                     </ul>
                 </div>
             </nav>

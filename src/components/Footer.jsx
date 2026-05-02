@@ -1,131 +1,177 @@
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import { Button, Input } from "@heroui/react";
+import {
+    FaFacebookF,
+    FaInstagram,
+    FaXTwitter,
+    FaYoutube,
+    FaPhone,
+    FaEnvelope,
+    FaLocationDot,
+} from "react-icons/fa6";
 
 const Footer = () => {
     return (
-        <footer className="relative mt-8">
-            <div className="mt-12 h-px w-full bg-linear-to-r from-transparent via-gray-300 to-transparent dark:via-white/10" />
-
-            {/* Background Layer */}
-            <div className="absolute inset-0 -z-10 bg-white dark:bg-[#0a0a0b]" />
-
-            {/* Subtle Gradient Glow */}
-            <div
-                className="absolute inset-0 -z-10 bg-linear-to-tr 
-        from-purple-500/5 via-transparent to-blue-500/5 
-        dark:from-purple-500/10 dark:to-blue-500/10 blur-3xl"
-            />
-
-            {/* Content */}
-            <div className="container mx-auto px-6 py-16">
-                {/* Top Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-                    {/* Brand */}
-                    <div className="space-y-4">
-                        <div className="flex items-center gap-2">
+        <footer className="relative mt-16 overflow-hidden border-t border-orange-100 bg-white">
+            <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+                <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+                    <div className="lg:col-span-1">
+                        <Link href="/" className="inline-flex items-center">
                             <Image
-                                src="/logo.png"
-                                alt="pixgen logo"
-                                width={120}
-                                height={30}
-                                className="dark:brightness-200"
+                                src="/logo2.png"
+                                alt="SunCart logo"
+                                width={131}
+                                height={32}
+                                className="h-8 w-33 object-contain"
+                                priority
                             />
-                        </div>
+                        </Link>
 
-                        <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400 max-w-xs">
-                            Create production-ready AI visuals in seconds. Built for speed,
-                            scale, and creativity.
+                        <p className="mt-4 max-w-xs text-sm leading-6 text-gray-600">
+                            Your one stop shop for premium summer essentials. Stay cool, stay
+                            stylish, stay protected.
                         </p>
+
+                        <div className="mt-5 flex items-center gap-3">
+                            <Link
+                                href="#"
+                                aria-label="Facebook"
+                                className="flex h-9 w-9 items-center justify-center rounded-full bg-blue-500 text-white transition hover:scale-105 hover:opacity-90"
+                            >
+                                <FaFacebookF size={15} />
+                            </Link>
+
+                            <Link
+                                href="#"
+                                aria-label="Instagram"
+                                className="flex h-9 w-9 items-center justify-center rounded-full bg-pink-500 text-white transition hover:scale-105 hover:opacity-90"
+                            >
+                                <FaInstagram size={16} />
+                            </Link>
+
+                            <Link
+                                href="#"
+                                aria-label="Twitter"
+                                className="flex h-9 w-9 items-center justify-center rounded-full bg-black text-white transition hover:scale-105 hover:opacity-90"
+                            >
+                                <FaXTwitter size={15} />
+                            </Link>
+
+                            <Link
+                                href="#"
+                                aria-label="Youtube"
+                                className="flex h-9 w-9 items-center justify-center rounded-full bg-red-500 text-white transition hover:scale-105 hover:opacity-90"
+                            >
+                                <FaYoutube size={16} />
+                            </Link>
+                        </div>
                     </div>
 
-                    <div></div>
-
-                    {/* Product */}
                     <div>
-                        <h3 className="text-sm font-semibold text-black dark:text-white mb-4">
-                            Product
+                        <h3 className="text-sm font-semibold text-gray-950">Contact Us</h3>
+
+                        <ul className="mt-4 space-y-4 text-sm text-gray-600">
+                            <li className="flex gap-3">
+                                <FaPhone className="mt-1 shrink-0 text-orange-500" />
+                                <span>+1 234 567 8900</span>
+                            </li>
+
+                            <li className="flex gap-3">
+                                <FaEnvelope className="mt-1 shrink-0 text-orange-500" />
+                                <span>support@suncart.com</span>
+                            </li>
+
+                            <li className="flex gap-3">
+                                <FaLocationDot className="mt-1 shrink-0 text-orange-500" />
+                                <span>
+                                    123 Beachside Ave,
+                                    <br />
+                                    Miami, FL 33101, USA
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 className="text-sm font-semibold text-gray-950">
+                            Quick Links
                         </h3>
-                        <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
+
+                        <ul className="mt-4 space-y-3 text-sm text-gray-600">
                             <li>
-                                <Link
-                                    href="/generate"
-                                    className="hover:text-black dark:hover:text-white transition"
-                                >
-                                    Generate
+                                <Link href="/" className="transition hover:text-orange-500">
+                                    Home
                                 </Link>
                             </li>
                             <li>
                                 <Link
-                                    href="/all-photos"
-                                    className="hover:text-black dark:hover:text-white transition"
+                                    href="/products"
+                                    className="transition hover:text-orange-500"
                                 >
-                                    Gallery
+                                    Products
                                 </Link>
                             </li>
                             <li>
                                 <Link
-                                    href="/pricing"
-                                    className="hover:text-black dark:hover:text-white transition"
+                                    href="/my-profile"
+                                    className="transition hover:text-orange-500"
                                 >
-                                    Pricing
+                                    My Profile
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="#" className="transition hover:text-orange-500">
+                                    FAQs
                                 </Link>
                             </li>
                         </ul>
                     </div>
 
-                    {/* Company */}
-                    <div>
-                        <h3 className="text-sm font-semibold text-black dark:text-white mb-4">
-                            Company
+                    <div className="rounded-3xl border border-orange-100 bg-orange-50/50 p-5">
+                        <h3 className="text-base font-semibold text-gray-950">
+                            Stay in the Sun ☀️
                         </h3>
-                        <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400">
-                            <li>
-                                <Link
-                                    href="/about"
-                                    className="hover:text-black dark:hover:text-white transition"
-                                >
-                                    About
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/contact"
-                                    className="hover:text-black dark:hover:text-white transition"
-                                >
-                                    Contact
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/terms"
-                                    className="hover:text-black dark:hover:text-white transition"
-                                >
-                                    Terms
-                                </Link>
-                            </li>
-                        </ul>
+
+                        <p className="mt-2 text-sm leading-6 text-gray-600">
+                            Subscribe to get special offers, new arrivals and summer tips.
+                        </p>
+
+                        <form className="mt-4 space-y-3">
+                            <Input
+                                type="email"
+                                placeholder="Enter your email"
+                                radius="lg"
+                                size="sm"
+                                variant="bordered"
+                                className="w-full"
+                            />
+
+                            <Button
+                                type="submit"
+                                className="w-full bg-linear-to-r from-orange-500 to-red-500 font-semibold text-white"
+                                radius="lg"
+                            >
+                                Subscribe
+                            </Button>
+                        </form>
                     </div>
                 </div>
+            </div>
 
-                {/* Divider */}
-                <div className="mt-12 h-px w-full bg-linear-to-r from-transparent via-gray-300 to-transparent dark:via-white/10" />
+            <div className="relative">
+                <div className="h-16 bg-linear-to-r from-orange-500 via-yellow-400 to-cyan-400" />
 
-                {/* Bottom */}
-                <div className="mt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
-                    <p>© {new Date().getFullYear()} suncart. All rights reserved.</p>
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 px-4 text-center text-xs text-white sm:flex-row sm:justify-between sm:px-8 lg:px-16">
+                    <p>© 2026 SunCart. All rights reserved.</p>
 
-                    <div className="flex items-center gap-6">
-                        <Link
-                            href="/privacy"
-                            className="hover:text-black dark:hover:text-white transition"
-                        >
-                            Privacy
+                    <div className="flex items-center gap-4">
+                        <Link href="#" className="transition hover:opacity-80">
+                            Privacy Policy
                         </Link>
-                        <Link
-                            href="/terms"
-                            className="hover:text-black dark:hover:text-white transition"
-                        >
-                            Terms
+                        <span className="opacity-60">|</span>
+                        <Link href="#" className="transition hover:opacity-80">
+                            Terms of Service
                         </Link>
                     </div>
                 </div>
