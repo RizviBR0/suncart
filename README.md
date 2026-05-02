@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Suncart 🛒
 
-## Getting Started
+## 📖 Purpose
 
-First, run the development server:
+Suncart is a modern, responsive web application built with **Next.js 16** and **React 19**. It serves as an e-commerce product showcase platform featuring secure user authentication, interactive product details, and dynamic client-side animations.
+
+## 🔗 Live URL
+
+**[Live Project Link](https://suncart-pink.vercel.app)** _(Replace with your actual root deployment URL if different)_
+
+## ✨ Key Features
+
+- **User Authentication**: Secure Login, Registration, and Social Sign-In (Google) via `better-auth`.
+- **Responsive Design**: Fully responsive layout adapting perfectly to mobile, tablet, and desktop views.
+- **Product Showcase**: View a catalog of products and navigate to dynamic individual product pages with interactive UI.
+- **Interactive UI**: Wobble animations on action buttons, loading skeletons, and interactive state changes.
+- **Toast Notifications**: Real-time feedback for authentication actions (login/register success or error).
+
+## 📦 NPM Packages Used
+
+This project utilizes a variety of modern npm packages to power the frontend, backend styling, and behaviors:
+
+- **[Next.js](https://nextjs.org/)** (`next`): Framework for server-side rendering and routing.
+- **[Better Auth](https://better-auth.com/)** (`better-auth`, `@better-auth/mongo-adapter`): Handles seamless secure authentication.
+- **[MongoDB](https://www.mongodb.com/)** (`mongodb`): Database driver.
+- **[HeroUI](https://heroui.com/)** (`@heroui/react`): Ready-to-use, beautifully styled component library.
+- **[Tailwind CSS](https://tailwindcss.com/)** (`tailwindcss`): Utility-first CSS framework for rapid styling.
+- **[React Toastify](https://fkhadra.github.io/react-toastify/)** (`react-toastify`): For displaying stylish toast notifications.
+- **[Animate.css](https://animate.style/)** (`animate.css`): For cross-browser CSS animations (like cart button wobble).
+- **Icons Modules**: Multiple icon packs including `react-icons`, `@iconify/react`, and `@gravity-ui/icons`.
+
+## 🚀 Getting Started
+
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
