@@ -91,8 +91,8 @@ const Navbar = () => {
                 </div>
 
                 {/* Hamburger icon for mobile */}
-                <button 
-                    className="md:hidden text-2xl text-gray-600 focus:outline-none" 
+                <button
+                    className="md:hidden text-2xl text-gray-600 focus:outline-none"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                 >
                     {isMenuOpen ? <FaTimes /> : <FaBars />}
@@ -113,7 +113,7 @@ const Navbar = () => {
                             <Link href={"/profile"} onClick={() => setIsMenuOpen(false)}>My Profile</Link>
                         </li>
                     </ul>
-                    
+
                     <div className="border-t pt-4">
                         {user ?
                             <div className="flex flex-col items-center gap-4">
@@ -125,7 +125,7 @@ const Navbar = () => {
                                     <span className="text-base font-medium">{user.name}</span>
                                 </div>
 
-                                <button onClick={() => {handleLogout(); setIsMenuOpen(false);}} className="w-full max-w-xs bg-red-500 text-white text-base px-4 py-2 rounded-full hover:bg-red-600 cursor-pointer">
+                                <button onClick={() => { handleLogout(); setIsMenuOpen(false); }} className="w-full max-w-xs bg-red-500 text-white text-base px-4 py-2 rounded-full hover:bg-red-600 cursor-pointer">
                                     Logout
                                 </button>
                             </div>
