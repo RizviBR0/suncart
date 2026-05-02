@@ -33,7 +33,7 @@ const ProfilePage = () => {
                 <Card.Header>
                     <Avatar className='size-40'>
                         <Avatar.Image className='object-cover object-center' alt={user?.name} src={user?.image} />
-                        <Avatar.Fallback>{user?.name?.charAt(0)}</Avatar.Fallback>
+                        <Avatar.Fallback className='text-4xl'>{user?.name?.charAt(0)}</Avatar.Fallback>
                     </Avatar>
                 </Card.Header>
 
@@ -65,10 +65,10 @@ const ProfilePage = () => {
                                                 </TextField>
 
                                                 <Modal.Footer>
-                                                    <Button slot="close" variant="secondary">
+                                                    <Button className="text-orange-500 bg-transparent" slot="close" variant="secondary">
                                                         Cancel
                                                     </Button>
-                                                    <Button type='submit' slot="close">Save</Button>
+                                                    <Button className="bg-orange-500" type='submit' slot="close">Save</Button>
                                                 </Modal.Footer>
                                             </form>
                                         </Surface>
