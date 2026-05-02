@@ -47,7 +47,7 @@ const Carousel = () => {
     }, []);
 
     return (
-        <section className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <section className="mx-auto w-full">
             <div className="relative overflow-hidden rounded-2xl bg-orange-50 shadow-sm sm:rounded-3xl">
                 <div
                     className="flex transition-transform duration-700 ease-in-out"

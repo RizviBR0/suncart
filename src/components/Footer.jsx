@@ -14,7 +14,7 @@ import {
 const Footer = () => {
     return (
         <footer className="relative mt-16 overflow-hidden border-t border-orange-100 bg-white">
-            <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+            <div className="container mx-auto py-10">
                 <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
                     <div className="lg:col-span-1">
                         <Link href="/" className="inline-flex items-center">
@@ -23,7 +23,7 @@ const Footer = () => {
                                 alt="SunCart logo"
                                 width={131}
                                 height={32}
-                                className="h-8 w-33 object-contain"
+                                className="h-8 w-auto object-contain"
                                 priority
                             />
                         </Link>
