@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "UV Protection Sunglasses",
+    "brand": "SunShade",
+    "price": 15,
+    "rating": 4.7,
+    "stock": 10,
+    "description": "Stylish UV protection sunglasses perfect for summer outings, beach walks, and everyday use.",
+    "image": "https://i.postimg.cc/jdwNqXSp/UV-Protection-Sunglasses.png",
+    "category": "Accessories"
+  },
+  {
+    "id": 2,
+    "name": "Aloe Vera Sunscreen SPF 50",
+    "brand": "GlowCare",
+    "price": 18,
+    "rating": 4.8,
+    "stock": 25,
+    "description": "Lightweight SPF 50 sunscreen with aloe vera to help protect your skin during hot summer days.",
+    "image": "https://i.postimg.cc/zvMgSLxY/Aloe-Vera-Sunscreen-SPF-50.png",
+    "category": "Skincare"
+  },
+  {
+    "id": 3,
+    "name": "Summer Breeze Cotton Shirt",
+    "brand": "CoolWear",
+    "price": 22,
+    "rating": 4.6,
+    "stock": 18,
+    "description": "Soft and breathable cotton shirt designed to keep you comfortable in warm weather.",
+    "image": "https://i.postimg.cc/rF0WyJwP/Summer-Breeze-Cotton-Shirt.png",
+    "category": "Clothing"
+  },
+  {
+    "id": 4,
+    "name": "Wide Brim Beach Hat",
+    "brand": "SunnyStyle",
+    "price": 14,
+    "rating": 4.5,
+    "stock": 20,
+    "description": "A lightweight wide brim hat that adds style and helps protect your face from strong sunlight.",
+    "image": "https://i.postimg.cc/wTyJxVjZ/Wide-Brim-Beach-Hat.png",
+    "category": "Accessories"
+  },
+  {
+    "id": 5,
+    "name": "Insulated Water Bottle",
+    "brand": "HydroMate",
+    "price": 19,
+    "rating": 4.9,
+    "stock": 30,
+    "description": "Durable insulated bottle that keeps your drinks cold and refreshing throughout the day.",
+    "image": "https://i.postimg.cc/CLBDMNx4/Insulated-Water-Bottle.png",
+    "category": "Beach Gear"
+  },
+  {
+    "id": 6,
+    "name": "Comfort Flip Flops",
+    "brand": "BeachStep",
+    "price": 12,
+    "rating": 4.4,
+    "stock": 22,
+    "description": "Comfortable and lightweight flip flops made for beach days, poolside walks, and casual summer outings.",
+    "image": "https://i.postimg.cc/h43TqwcL/Comfort-Flip-Flops.png",
+    "category": "Footwear"
+  },
+  {
+    "id": 7,
+    "name": "Straw Beach Tote Bag",
+    "brand": "PalmCarry",
+    "price": 24,
+    "rating": 4.6,
+    "stock": 16,
+    "description": "A spacious straw tote bag for carrying sunscreen, towels, sunglasses, and other summer essentials.",
+    "image": "https://i.postimg.cc/DyJsfgw6/Straw-Beach-Tote-Bag.png",
+    "category": "Accessories"
+  },
+  {
+    "id": 8,
+    "name": "Cooling Face Mist",
+    "brand": "FreshGlow",
+    "price": 11,
+    "rating": 4.3,
+    "stock": 35,
+    "description": "Refreshing face mist that helps cool and hydrate your skin during hot and sunny days.",
+    "image": "https://i.postimg.cc/1RYwZTsB/Cooling-Face-Mist.png",
+    "category": "Skincare"
+  },
+  {
+    "id": 9,
+    "name": "Beach Towel",
+    "brand": "WaveSoft",
+    "price": 17,
+    "rating": 4.5,
+    "stock": 28,
+    "description": "Soft, quick drying beach towel with a colorful summer pattern for beach and pool use.",
+    "image": "https://i.postimg.cc/hvwdbJpN/Beach-Towel.png",
+    "category": "Beach Gear"
+  },
+  {
+    "id": 10,
+    "name": "Lightweight Summer Dress",
+    "brand": "BreezeFit",
+    "price": 32,
+    "rating": 4.8,
+    "stock": 12,
+    "description": "A stylish and breathable summer dress made for vacations, casual outings, and sunny weekends.",
+    "image": "https://i.postimg.cc/qqY3Xt1V/Lightweight-Summer-Dress.png",
+    "category": "Clothing"
+  },
+  {
+    "id": 11,
+    "name": "Portable Mini Fan",
+    "brand": "CoolAir",
+    "price": 16,
+    "rating": 4.4,
+    "stock": 26,
+    "description": "Compact rechargeable mini fan that helps you stay cool while traveling, walking, or relaxing outdoors.",
+    "image": "https://i.postimg.cc/rsbrCdQH/Portable-Mini-Fan.png",
+    "category": "Gadgets"
+  },
+  {
+    "id": 12,
+    "name": "Waterproof Phone Pouch",
+    "brand": "AquaSafe",
+    "price": 10,
+    "rating": 4.6,
+    "stock": 40,
+    "description": "Waterproof phone pouch designed to protect your phone during beach trips, pool days, and water activities.",
+    "image": "https://i.postimg.cc/d3Xym74C/Waterproof-Phone-Pouch.png",
+    "category": "Accessories"
+  }
+]
