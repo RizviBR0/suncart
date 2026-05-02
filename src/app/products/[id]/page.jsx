@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import { FaStar, FaHeart, FaCheckCircle, FaTag, FaBoxOpen } from 'react-icons/fa';
+import 'animate.css';
+import ActionButtons from './ActionButtons';
 
 const ProductDetailsPage = async ({ params }) => {
     const { id } = await params;
@@ -58,14 +60,7 @@ const ProductDetailsPage = async ({ params }) => {
                         {expectedProduct.description}
                     </p>
 
-                    <div className="mt-8 flex gap-4">
-                        <button className="flex-1 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg hover:from-orange-600 hover:to-red-600 transition-all">
-                            Buy Now
-                        </button>
-                        <button className="flex-1 border-2 border-orange-500 text-orange-500 font-bold py-3 px-6 rounded-lg hover:bg-orange-50 transition-all">
-                            Add to Cart
-                        </button>
-                    </div>
+                    <ActionButtons />
                 </div>
             </div>
         </div>
