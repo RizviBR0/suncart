@@ -38,7 +38,7 @@ const ProductCard = ({ item }) => {
                                 {item.rating}
                             </span>
                         </div>
-                        <Link className='w-full' href={`/all-photos/${item.id}`}><Button className="w-full gap-0.5 mt-2 border border-orange-500 text-orange-500 hover:bg-orange-50" variant='outline'>View Details <MdKeyboardArrowRight /></Button></Link>
+                        <Link className='w-full' href={`/products/${item.id}`}><Button className="w-full gap-0.5 mt-2 border border-orange-500 text-orange-500 hover:bg-orange-50" variant='outline'>View Details <MdKeyboardArrowRight /></Button></Link>
                     </Card.Footer>
                 </Card.Header>
             </div>

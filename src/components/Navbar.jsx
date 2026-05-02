@@ -1,34 +1,34 @@
 "use client";
-// import { authClient } from "@/lib/auth-client";
+import { authClient } from "@/lib/auth-client";
 import { Avatar, Button, Dropdown, Label, Skeleton } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
-    // const { data, isPending } = authClient.useSession();
-    // const user = data?.user;
+    const { data, isPending } = authClient.useSession();
+    const user = data?.user;
 
-    // const handleLogout = async () => {
-    //     await authClient.signOut();
-    // }
+    const handleLogout = async () => {
+        await authClient.signOut();
+    }
 
-    // if (isPending) {
-    //     return <nav className="sticky top-0 z-40 w-full border-b border-separator bg-background/70 backdrop-blur-lg">
-    //         <header className="flex h-14 items-center justify-between px-6">
-    //             <div className="flex items-center gap-3">
-    //                 <Skeleton className="h-4 w-20 rounded-lg" />
-    //             </div>
+    if (isPending) {
+        return <nav className="sticky top-0 z-40 w-full border-b border-separator bg-background/70 backdrop-blur-lg">
+            <header className="flex h-14 items-center justify-between px-6">
+                <div className="flex items-center gap-3">
+                    <Skeleton className="h-4 w-20 rounded-lg" />
+                </div>
 
-    //             <ul className="flex items-center gap-4">
-    //                 <Skeleton className="h-4 w-20 rounded-lg" />
-    //                 <Skeleton className="h-4 w-20 rounded-lg" />
-    //                 <Skeleton className="h-4 w-20 rounded-lg" />
-    //             </ul>
+                <ul className="flex items-center gap-4">
+                    <Skeleton className="h-4 w-20 rounded-lg" />
+                    <Skeleton className="h-4 w-20 rounded-lg" />
+                    <Skeleton className="h-4 w-20 rounded-lg" />
+                </ul>
 
-    //             <Skeleton className="h-4 w-20 rounded-lg" />
-    //         </header>
-    //     </nav>
-    // }
+                <Skeleton className="h-4 w-20 rounded-lg" />
+            </header>
+        </nav>
+    }
 
     return (
         <div className="border-b px-2">
@@ -57,48 +57,34 @@ const Navbar = () => {
                 </ul>
 
                 <div className="flex gap-4">
-                    {/* {user ?
-                        <Dropdown>
-                            <Button className="bg-transparent border-none p-0" variant="light">
-                                <Avatar size="sm">
-                                    <Avatar.Image className='object-cover object-center' alt={user.name} src={user?.image} referrerPolicy="no-referrer" />
-                                    <Avatar.Fallback>{user.name.charAt(0)}</Avatar.Fallback>
-                                </Avatar>
-                            </Button>
-                            <Dropdown.Popover>
-                                <Dropdown.Menu onAction={(key) => console.log(`Selected: ${key}`)}>
-                                    <Dropdown.Item onClick={handleLogout} id="logout" textValue="Logout" variant="danger">
-                                        <Label>Logout</Label>
-                                    </Dropdown.Item>
-                                </Dropdown.Menu>
-                            </Dropdown.Popover>
-                        </Dropdown>
+                    {user ?
+                        <div className="flex justify-center items-center gap-2">
+                            <Avatar size="sm">
+                                <Avatar.Image className='object-cover object-center' alt={user.name} src={user?.image} referrerPolicy="no-referrer" />
+                                <Avatar.Fallback>{user.name.charAt(0)}</Avatar.Fallback>
+                            </Avatar>
+
+                            <button onClick={handleLogout} className="bg-red-500 text-white text-sm px-3 py-1.5 rounded-full hover:bg-red-600 cursor-pointer">
+                                Logout
+                            </button>
+                        </div>
                         :
                         <ul className="flex items-center text-sm gap-3">
-                            <li className="font-semibold">
-                                <Link href={"/signup"}>SignUp</Link>
-                            </li>
-                            <li className="font-semibold">
-                                <Link href={"/signin"}>SignIn</Link>
-                            </li>
-                        </ul>} */}
+                            <Link
+                                href="/login"
+                                variant="bordered"
+                                className="border-gray-300 font-medium text-gray-800"
+                            >
+                                Login
+                            </Link>
 
-                    <ul className="flex items-center text-sm gap-3">
-                        <Link
-                            href="/login"
-                            variant="bordered"
-                            className="border-gray-300 font-medium text-gray-800"
-                        >
-                            Login
-                        </Link>
-
-                        <Link
-                            href="/register"
-                            className="bg-linear-to-r from-orange-500 to-red-500 font-semibold text-white px-4 py-1.5 rounded-full"
-                        >
-                            Register
-                        </Link>
-                    </ul>
+                            <Link
+                                href="/register"
+                                className="bg-linear-to-r from-orange-500 to-red-500 font-semibold text-white px-4 py-1.5 rounded-full"
+                            >
+                                Register
+                            </Link>
+                        </ul>}
                 </div>
             </nav>
         </div>
