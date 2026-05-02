@@ -14,6 +14,7 @@ import {
     TextField,
 } from "@heroui/react";
 import Link from "next/link";
+import { toast } from "react-toastify";
 
 export default function LoginPage() {
     const onSubmit = async (e) => {
@@ -29,9 +30,9 @@ export default function LoginPage() {
         });
 
         if (error) {
-            console.log("Error logging in:", error);
+            toast.error("Error logging in");
         } else {
-            console.log("User logged in successfully:", data);
+            toast.success("User logged in successfully");
         }
     };
 
@@ -42,10 +43,10 @@ export default function LoginPage() {
     }
 
     return (
-        <Card className="border mx-auto w-125 py-10 mt-5">
+        <Card className="border mx-auto w-[90%] max-w-md py-8 sm:py-10 mt-5">
             <h1 className="text-center text-2xl font-bold">Login</h1>
 
-            <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
+            <Form className="flex w-full px-6 sm:px-10 mx-auto flex-col gap-4" onSubmit={onSubmit}>
                 <TextField
                     isRequired
                     name="email"

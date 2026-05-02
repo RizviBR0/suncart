@@ -15,6 +15,7 @@ import {
 } from "@heroui/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 
 export default function RegisterPage() {
     const router = useRouter();
@@ -33,9 +34,10 @@ export default function RegisterPage() {
         });
 
         if (error) {
-            console.log("Error signing up:", error);
+            toast.error("Failed to register");
         } else {
-            router.push("/");
+            toast.success("Registered successfully!!");
+            router.push("/login");
         }
     };
 
@@ -46,10 +48,10 @@ export default function RegisterPage() {
     }
 
     return (
-        <Card className="border mx-auto w-125 py-10 mt-5">
+        <Card className="border mx-auto w-[90%] max-w-md py-8 sm:py-10 mt-5">
             <h1 className="text-center text-2xl font-bold">Sign Up</h1>
 
-            <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
+            <Form className="flex w-full px-6 sm:px-10 mx-auto flex-col gap-4" onSubmit={onSubmit}>
                 <TextField isRequired name="name" type="text">
                     <Label>Name</Label>
                     <Input placeholder="Enter your name" />
