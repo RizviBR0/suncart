@@ -5,7 +5,9 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: "i.postimg.cc",
+        protocol: "https",
+        hostname: "ibb.co.com",
+        pathname: "/**",
       },
     ],
   },

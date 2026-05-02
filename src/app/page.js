@@ -13,9 +13,11 @@ export default async function Home() {
 
       <section>
         <h1>Popular Products</h1>
-        {products.map((product) => (
-          <ProductCard key={product.id} item={product} />
-        ))}
+        <div className="grid grid-cols-4 gap-5">
+          {products.map((product) => (
+            <ProductCard key={product.id} item={product} />
+          ))}
+        </div>
       </section>
     </div>
   );
