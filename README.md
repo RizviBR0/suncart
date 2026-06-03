@@ -6,7 +6,7 @@ Suncart is a modern, responsive web application built with **Next.js 16** and **
 
 ## 🔗 Live URL
 
-**[Live Project Link](https://suncart-pink.vercel.app)** _(Replace with your actual root deployment URL if different)_
+**[Live Project Link](https://suncart-pink.vercel.app)**
 
 ## ✨ Key Features
 
