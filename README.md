@@ -1,38 +1,12 @@
-# SunCart 🛒
+# Suncart 🛒
 
-[![Next.js](https://img.shields.io/badge/Next.js-16.2.4-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19.2.4-blue?style=for-the-badge&logo=react)](https://react.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.0-38bdf8?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-[![Better Auth](https://img.shields.io/badge/Better_Auth-1.6.9-orange?style=for-the-badge)](https://better-auth.com/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-7.2.0-green?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/)
-[![Vercel](https://img.shields.io/badge/Vercel-Live_Demo-black?style=for-the-badge&logo=vercel)](https://suncart-pink.vercel.app)
+## 📖 Purpose
 
-SunCart is a premium, modern, and feature-rich e-commerce showcase web application specifically curated for summer care essentials. It features robust secure authentication, dynamic details pages, elegant loaders, and stunning UI/UX design with responsive layouts.
+Suncart is a modern, responsive web application built with **Next.js 16** and **React 19**. It serves as an e-commerce product showcase platform featuring secure user authentication, interactive product details, and dynamic client-side animations.
 
----
+## 🔗 Live URL
 
-## 🔗 Live Links & Resources
-
-* **Live Application URL:** [https://suncart-pink.vercel.app](https://suncart-pink.vercel.app)
-* **GitHub Repository:** [RizviBR0/suncart](https://github.com/RizviBR0/suncart)
-
----
-
-## 📋 GitHub Repository Details (For Quick Copy-Paste)
-When setting up your repository on GitHub, copy-paste these details:
-* **Description:** A premium, responsive summer care e-commerce showcase web application. Built with Next.js 16, React 19, MongoDB, and Better Auth. Features social login, dynamic product pages, and elegant UI/UX.
-* **Website:** `https://suncart-pink.vercel.app`
-* **Topics/Tags:** `nextjs`, `react`, `mongodb`, `better-auth`, `heroui`, `tailwindcss`, `e-commerce`
-
----
-
-## 🖼️ Application Preview
-
-Below is a preview of the SunCart homepage:
-
-![SunCart Homepage Screenshot](./public/suncart_screenshot.png)
-
----
+**[Live Project Link](https://suncart-pink.vercel.app)** _(Replace with your actual root deployment URL if different)_
 
 ## ✨ Key Features
 
